@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lighting Bulb</title>
+
+	 <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+   <div class= "bulb">
+	<i class="fas fa-lightbulb"></i>
+   </div>
+
+   <div class="switch">
+        <label>
+        Off
+        <input type="checkbox">
+        <span class="lever"></span>
+        On
+     </label>
+  </div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    
+<script>
+  $(document).ready(function(){
+   $('input[type=checkbox]').on('click',function(){
+
+    if($(this).is(':checked')){
+      $('.bulb i').css({
+        "color":"white",
+        "text-shadow":"2px 2px 900px white"
+      });
+    } else{
+      $('.bulb i').css({
+        "color":"black",
+        "text-shadow": "none"
+       });
+
+   }
+
+  });
+
+ });
+  
+</script>
+
+
+</body>
+
+</html>

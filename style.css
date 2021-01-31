@@ -1,0 +1,26 @@
+body{
+	background: linear-gradient(to right, #414345,#232526)
+}
+
+.bulb{
+	display:inline-block;
+}
+
+.bulb i{
+	font-size: 23em;
+	position: absolute;
+	left: 350px;
+	top:130px;
+	color:black;
+}
+
+.switch{
+	display: inline;
+	position:absolute;
+	top:200px;
+	right:250px;
+}
+.switch label{
+  font-family: 'Segoe UI';
+  font-size:20px;
+}
